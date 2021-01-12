@@ -1,10 +1,12 @@
 function Range(from, to) {
     this.from = from;
     this.to = to;
+    this.increment =3;
 
 }
-
+// Range.prototype = {constructor: Range function}
 Range.prototype = {
+    increment1 :4,
     includes(x){
         return this.from <= x && this.to >= x;
     },
