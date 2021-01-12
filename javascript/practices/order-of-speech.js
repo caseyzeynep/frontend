@@ -6,8 +6,8 @@ function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
 
-for(let i=nameLength-1; i > 0; i--){
-    let randomIndex = getRndInteger(0,i);
+for(let i = nameLength-1; i > 0; i--){
+    let randomIndex = getRndInteger(0, i);
     console.log(names[randomIndex]);
     names.splice(randomIndex, 1);
 }
