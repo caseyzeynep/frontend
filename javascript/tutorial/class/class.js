@@ -3,6 +3,7 @@ class Range {
     constructor(from, to){
         this.from = from;
         this.to = to;
+        this.increment =3;
     }
     get increment(){
         return this.#increment;
@@ -20,11 +21,25 @@ class Range {
         this.increment = this.increment + 1;
         return this.increment;
     }
+     print1(){
+        console.log("Hello1");
+    }
+    static print(){
+        this.print1();
+        console.log("Hello");
+    }
 }
+
+
 // Range.f();
 // Range.incrementer();
 let r1 = new Range(1,3);
 let r2 = new Range(1,3);
+// {
+//    from:1 to: 3,  increment:3
+//     __proto__: Range.prototype{include(),equals()}
+// }
+// Range.print();
 console.log(r1 instanceof Range);
 r1.increment =5;
 console.log(r1.increment);

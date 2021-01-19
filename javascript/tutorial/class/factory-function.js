@@ -23,10 +23,17 @@ range.methods = {
 
 let r1 = range(1,3);
 let r2 = range(1,3);
+/*
+    r1 = {x:1, y:3,
+            __proto__: {param:4, equals(), increment(),
+                            __proto__: {toString()}
+                       }
+         }
+* */
 console.log(r1.increment());
 console.log(r1.__proto__.param);
 console.log(r2.param);
-let r3 = new range(1, 3);
+
 
 console.log(r1 instanceof range);
 // console.log(r1 instanceof range.methods); type error

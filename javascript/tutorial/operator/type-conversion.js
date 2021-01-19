@@ -1,3 +1,6 @@
+// ToNumber For example, true becomes 1 and false becomes 0. undefined becomes NaN, but (curiously) null becomes 0.
+// ToNumber for a string value essentially works for the most part like the rules/syntax for numeric literals .
+// If it fails, the result is NaN (instead of a syntax error as with number literals)
 console.log(String(undefined));
 console.log(Number(undefined));
 console.log(Boolean(undefined));
